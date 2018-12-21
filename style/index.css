@@ -7,12 +7,12 @@ html, body {
 
 .Form { 
   position: absolute;
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 400px;
   z-index: 15;
   top: 50%;
   left: 50%;
-  margin: -150px 0 0 -250px;
+  margin: -200px 0 0 -350px;
   border-radius: 10px;
   box-shadow: 10px 10px 15px #90a7b1;
   background-color: white;
@@ -22,7 +22,7 @@ html, body {
 .titulo{
   font-family: 'Rockwell', sans-serif;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 7%;
   color: #6b7174;
 }
 
@@ -31,6 +31,118 @@ html, body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: absolute;
-  margin-top: 190px;
-  margin-left: 50px;
+  margin-top: 270px;
+  margin-left: 60px;
+}
+
+.inputs{
+  position: absolute;
+  width: 640px;
+  height: 300px;
+  top:50%;
+  left: 50%;
+  margin: -125px 0 0 -320px;
+}
+
+
+.inner-addon .img {
+  position: absolute;
+  padding: 15px;
+  width: 200px;
+  pointer-events: none;
+  margin-left: 3.5%;
+  margin-top: 3.5%;
+}
+
+/* align icon */
+.left-addon .img  { left:  10px; top: 5px;}
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+
+.img{
+  background-image: url(../imagens/2.png);
+  background-repeat: no-repeat;
+}
+.form-control {
+  border-color: #bcc0c2e7;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0.8px;
+  width: 250px;
+  height: 33px;
+  margin-left: 3.5%;
+  margin-top: 3.5%;
+  opacity: 0.6;
+  
+
+}
+label {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.textbox{
+  opacity: 0.6;
+  border-color: #bcc0c2e7;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0.8px;
+  width: 585px;
+  height: 110px;
+  margin-left: 3.5%;
+  margin-top: 3%;
+}
+.textbox:focus {
+  outline: none !important;
+  border:1px solid #719ECE;
+  box-shadow: 0 0 5px #719ECE;
+}
+
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+  top: -15px;
+  opacity: 0.6;
+  bottom: 20px;
+  margin-left: 20px;
+  font-size: 11px;
+  font-family: 'Rockwell', sans-serif;
+  color:#0176c2;
+}
+
+.inputText {
+  opacity: 0.6;
+  font-size: 13px;
+  font-family: 'Rockwell', sans-serif;
+}
+.inputText:focus {
+  outline: none !important;
+  border:1px solid #719ECE;
+}
+
+.floating-label {
+  opacity: 0.6;
+  pointer-events: none;
+  margin-left: 30px;
+  left: 20px;
+  padding-top: -5px;
+  transition: 0.2s ease all;
+  font-family: 'Rockwell', sans-serif;
+  
+}
+
+button{
+  margin-left:510px;
+  margin-top:10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-radius:3px;
+  font-family: 'Rockwell', sans-serif;
+  box-shadow: 5px 5px 10px #90a7b1;
+  border-style: solid;
+  color: #a7d9ed;
+  background-color: #0076c2;
+  border-color: #0076c2;
 }

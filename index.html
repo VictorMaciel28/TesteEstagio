@@ -11,21 +11,42 @@
 </head>
 
 <body>
-  <div class="Form">
-    <div class="bgimage">
-      <img src="imagens/1.png" alt="">
-    </div>
-    <div class="titulo">
-        <h4>
-          Peça seu orçamento agora mesmo!
-        </h4>
-    </div>
+  <form onsubmit="validar()">
+    <div class="Form">
+      <div class="bgimage"><img src="imagens/1.png"></div>
+      <div class="titulo">
+        <h3>Peça seu orçamento agora mesmo!</h3>
+      </div>
+
+      <div class="inputs form-groupd">
+        <div class="line">
+          <div class="inner-addon left-addon">
+            <input type="text" class="form-control inputText" required/>
+            <i class="img floating-label">Nome </i>
+            <input type="email" class="form-control inputText" placeholder="E-mail" required/>
+            <i class="img"></i>
+          </div>
+          <div class="inner-addon left-addon">
+            <input maxlength="" type="number" class="form-control inputText" placeholder="Telefone" required/>
+            <i class="img"></i>
+            <input type="text" class="form-control inputText" placeholder="Escolha o serviço que deseja" required/>
+            <i class="img"></i>
+          </div>
+        </div>
+
+        <div>
+          <textarea class="textbox" required></textarea>
+        </div>
+        <button>Enviar</button>
+      </div>
+  </form>
   </div>
 
 
 
   <!-- Dependência jQuery-->
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
